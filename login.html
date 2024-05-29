@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style.css">
+    <title>Contacto - Flor Arte</title>
+</head>
+<body>
+    <style>/* Estilos para el formulario de contacto */
+        .contacto {
+            text-align: center;
+            padding: 50px 0;
+        }
+        
+        .contacto h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .contacto-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .input-group input,
+        .input-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .input-group textarea {
+            resize: vertical;
+        }
+        
+        input[type="submit"],
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        input[type="submit"]:hover,
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        </style>
+<header>
+    <nav class="nv">
+        <div class="logo_brand">
+            <h2>Flor Arte</h2>
+        </div>
+        <div class="links">
+            <a href="nosotros.html" class="nav-enlace ">Nosotros</a>
+            <a href="ofertas.html" class="nav-enlace ">Ofertas</a>
+            <a href="productos.html" class="nav-enlace ">Productos</a>
+            <a href="login.html" class="nav-enlace ">Login</a>
+        </div>
+    </nav>
+</header>
+
+<section class="contacto">
+    <h2>Contáctanos</h2>
+    <div class="contacto-form">
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="subject">Asunto</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="input-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="#">Inicio</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Nosotros</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Ofertas</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Equipo</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Contacto</a></li>
+    </ul>
+    <p id="derechos">&copy;2024 | Flor Arte - Derechos reservados</p>
+</footer>
+
+</body>
+</html>

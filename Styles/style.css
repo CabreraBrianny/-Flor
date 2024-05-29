@@ -1,0 +1,462 @@
+body{
+    background: #E5E5E5;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 250px;
+    height: 160px;
+    /* margin-top: 12px; */
+    /* margin-right: 500px; */
+}
+
+.txt{
+    /* width: 50%;
+    padding-right: 40px;*/
+    padding-left: 60px; 
+    max-width: 600px;
+}
+
+
+.nv {
+    background: #d600b2;
+    box-sizing: border-box;
+    display: flex;
+    /* justify-content: flex-end; */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    
+
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+
+a {
+    text-decoration: dashed;
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a:hover{
+    color: rgba(0, 0, 0, 0.457);
+}
+.nav-enlace{
+    margin-right: 20px;
+}
+
+.slogan-sc{
+    background: #E5E5E5;
+    height: 400px;
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+#slogan{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h3{
+font-family: Arial;
+font-weight: lighter;
+font-size: 20px;
+}
+
+.btns{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+button{
+    font-size: 20px;
+    border: 2px solid blue;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#btn-1{
+    margin-right: 8px;
+}
+#btn-1:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+/*SOLO SLIDER*/
+.slide {
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 25px;
+    margin-right: 60px;
+    margin-left: 400px;
+    margin-bottom: 50px;
+    width: 50%;
+    height: 300px;
+}
+
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: calc( 300px + 3em);
+}
+
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+
+.slide-item img {
+    height: 300px;
+    width: 100%;
+}
+
+.slide-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.slide-control.prev {
+    left: 2%;
+}
+
+.slide-control.next {
+    right: 2%;
+}
+
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3,
+#slide-4:checked ~ .control-4{
+    display: block;
+}
+
+#sec-video{
+    background-color: white;
+    width: 1000px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    height: 600px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.banner{
+    background: #d600b2;
+    height: 100px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 1px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+video{
+    width: 800px;
+    padding-left: 100px;
+    padding-top: 25px;
+}
+
+/*SOLO SLIDER*/
+.footer {
+    background: #d600b2;
+    min-height: 100px;
+    padding: 20px 50px;
+    margin-top: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  
+  .menu__item {
+    list-style: none;
+  }
+
+  
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+
+  /*Login*/
+/* Estilos para el formulario de inicio de sesión */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #702082;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #702082;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #50145a;
+}
+  /*login*/
+
+
+  /*Ofertas*/
+ /* Estilos para la página de ofertas */
+
+.ofertas-container {
+    display: flex;
+    flex-direction: column; /* Cambiar de fila a columna */
+    align-items: center;
+    padding: 20px;
+}
+
+.oferta {
+    width: 60%; /* Ancho del contenedor de la oferta */
+    max-width: 500px; /* Ancho máximo para un mejor diseño responsivo */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.oferta img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.oferta h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #702082;
+}
+
+.oferta p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.btn-S{
+    background-color: rgba(52, 52, 243, 0.557);
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: 15px;
+}
+
+  /*Ofertas*/
+
+  /*NOSOTROS*/
+  #nosotros {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#nosotros h2 {
+    color: #702082;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#nosotros p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#nosotros ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nosotros ul li {
+    margin-bottom: 15px;
+}
+
+#nosotros ul li strong {
+    color: #702082;
+}
+
+#nosotros ul li:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    #nosotros h2 {
+        font-size: 24px;
+    }
+
+    #nosotros p {
+        font-size: 14px;
+    }
+}
+
+/*NOSOTROS*/
+
+
+/*PRODUCTOS*/
+
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.producto {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.producto button {
+    background-color: #702082;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.producto button:hover {
+    background-color: #50145a;
+}
+/*PRODUCTOS*/
+
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  #derechos{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
